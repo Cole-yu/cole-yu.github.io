@@ -1,0 +1,60 @@
+﻿@media(min-width:@screen-lg-min) {
+    body {
+            font-size:16px;
+            background-color:#0e0e0e;
+            color:white;                  
+    }
+
+    p{
+        text-indent:2em;    /*首行缩进两字符*/
+    }
+    h3{
+        color:#ff9f20;
+    }
+    h1 {
+        color:#ff9f20;
+        text-align:center;
+    }            
+
+    #photo {
+        padding-top:20px;
+        text-align:center;         
+    }
+
+    #aboutMe {
+        padding-top:30px;    
+        background-color:white;        
+        height:inherit;
+    }
+
+    #information {    
+        padding-left:20px;
+        padding-bottom:20px;        
+    }
+
+    #experience { 
+        padding-top:20px;
+        background-color:white;
+        height:inherit;
+        color:#333333;
+    }
+
+    #skill {
+        padding-left:20px;
+        padding-top:20px;
+    }
+
+    #education { 
+        padding-top:20px;
+        background-color:white; 
+        color:#333333; 
+        height:inherit;
+    }
+
+    ul {
+        list-style-type:none;
+        float:left;
+        margin-left:0px;
+        padding-left:0px;
+    }
+}

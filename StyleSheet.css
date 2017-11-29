@@ -1,101 +1,96 @@
 ﻿body {
-        font-size:16px;
-        background-color:#0e0e0e;
-        color:white;                     
+    background-color:black;
+    color:white;
 }
+
 p{
-    text-indent:2em;    /*首行缩进两字符*/
-}
-h3 {
+        text-indent:2em;    /*首行缩进两字符*/
+    }
+
+h1,h3,h4 {
     color:#ff9f20;
 }
-h1 {
-    color:#ff9f20;
 
-    text-align:center;
-}
-.img {
-    width:120px;    
-}
-
-#photo {
-    padding-top:20px;
-    text-align:center;
-    padding-bottom:10px;  
-}
-
-#aboutMe {
-    padding-top:30px;    
+.rowbackground-white {
     background-color:white;
     color:#333333;
+}
+
+.font-white {
+     background-color:#0e0e0e;
+     color:white;
+}
+
+#photo {    
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:10px;     
+}
+
+#aboutMe {     
+    background-color:white;        
     height:inherit;
+    padding-right:30px;
 }
 
 #information {    
+    padding-top:20px;
     padding-left:20px;
     padding-bottom:20px;        
 }
 
-#experience { 
-    padding-top:20px;
+#experience {     
     background-color:white;
     height:inherit;
     color:#333333;
+    padding-right:30px;
 }
 
 #skill {
     padding-left:20px;
     padding-top:20px;
+    padding-bottom:20px;        
 }
 
-#education {    
-    padding-top:20px;
+#education {     
     background-color:white; 
     color:#333333; 
     height:inherit;
+    padding-right:30px;   
 }
 
-#row1 {
-   clear:both;      
-   height:270px;
-   width:1200px;      
-}
-
-#row2 {
-    clear:both;      
-    width:1200px;
-    height:493px;
-    background:#333333;
-    opacity:0.9;
-}
-#row3 {
-    clear:both;
-    width:1200px;
-    height:245px;
-}
-.row_left {
-    float:left;    
-    width:250px;    
-}
-.row_right {
-    padding-left:250px;
-    float:left; 
-    width:950px;
-    padding-right:20px;
-}
-#content {
-    float:left;    
-    margin-left:150px;
-    margin-top:30px;
-}
 ul {
     list-style-type:none;
     float:left;
-    margin-left:0px;
-    padding-left:0px;
+    padding-left:20px;
 }
-.font-icon {
-    font-size:20px; 
-    color:white;
-    padding-top:15%;
+
+.container {
+    margin-top:20px;
+    margin-bottom:20px;
+    background:#333333;
 }
+
+.icon-font {
+    border-radius:100%;
+    background-color:#0e0e0e;
+    line-height:25px;
+}
+
+@media (max-width:767px) {                                  /*在小于768像素的屏幕里,这里的样式才生效*/  
+    #education-icon,#experience-icon{
+        display:none;
+    }
+}  
+
+@media (min-width: 768px) and (max-width: 991px) {  
+    /*在768和991像素之间的屏幕里,这里的样式才生效*/  
+}  
+
+@media (min-width: 992px) and (max-width: 1199px) {  
+    /*在992和1199像素之间的屏幕里,这里的样式才生效*/  
+}  
+
+@media (min-width: 1200px) {  
+    /*在大于1200像素的屏幕里,这里的样式才生效*/  
+}  

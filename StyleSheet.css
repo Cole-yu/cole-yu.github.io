@@ -77,10 +77,14 @@ ul {
     line-height:25px;
 }
 
-@media (max-width:767px) {                                  /*在小于768像素的屏幕里,这里的样式才生效*/  
+@media (max-width:991px) {                                  /*在小于768像素的屏幕里,这里的样式才生效*/  
     #education-icon,#experience-icon{
         display:none;
     }
+}
+
+@media (max-width:768px) {                                  /*在小于768像素的屏幕里,这里的样式才生效*/  
+    
 }  
 
 @media (min-width: 768px) and (max-width: 991px) {  

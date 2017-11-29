@@ -11,11 +11,11 @@
 |电话|18817934440|
 |邮箱|1032577646@qq.com|
 ### 技能及专业知识
-1. 了解TCP\IP等计算机网络的原理,TCP与UDP的区别,了解计算机对高级语言的处理工程（预编译，编译，汇编，链接），能利用gcc等工具实现高级语言到计算机语言的的编译工程
+1. 了解TCP\IP等计算机网络的原理,TCP与UDP的区别,了解计算机对高级语言的处理工程（预编译，编译，汇编，链接），能利用gcc等工具实现高级语言到计算机语言的的编译过程，明白进程与线程之间的区别。
 2. 精通Javascript，c#，Html,CSS，SQL语言
 3. 了解浏览器的工作原理
 4. 阅读《深入浅出Node.js》，朴灵，Restful，了解路由控制，中间件的工作原理
-5. 阅读《Javascript高级程序设计》，理解原生Javascript的实现过程
+5. 阅读《Javascript高级程序设计》，理解原生Javascript的实现过程，原型模式，构造函数，原型链继承，寄生组合式继承，
 6. 熟悉Jquery，Bootstrap等Js库，Express,Angluar,Vue，connect，React等Js框架
 7. 能开发简单的Winform桌面应用软件
 8. 能熟练操作Photoshop,Axure，AI,AE等多媒体软件

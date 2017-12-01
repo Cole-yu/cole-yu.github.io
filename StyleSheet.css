@@ -27,16 +27,28 @@ h1,h3,h4 {
     padding-bottom:10px;     
 }
 
+#aboutme {
+    padding-bottom:10px;
+}
+
 #information {    
     padding-top:20px;
     padding-left:20px;
     padding-bottom:20px;        
 }
 
+#experience {
+    padding-bottom:20px;    
+}
+
 #skill {
     padding-left:20px;
     padding-top:20px;
     padding-bottom:20px;        
+}
+
+#education {
+    padding-bottom:20px;
 }
 
 ul {
@@ -69,6 +81,11 @@ ul {
     margin-top:10px;
     margin-bottom:0;
     margin-right:10PX;
+}
+
+.line-vertical-devision {
+    border-right-style:solid;
+    border-right-color:black;
 }
 
 @media (max-width:628px){

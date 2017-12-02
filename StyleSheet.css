@@ -88,7 +88,7 @@ ul {
     border-right-color:black;
 }
 
-@media (max-width:563px){
+@media (max-width:570px){
     .line-vertical {
         display:none;
     }

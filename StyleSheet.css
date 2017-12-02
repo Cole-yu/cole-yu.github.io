@@ -110,7 +110,10 @@ ul {
 }  
 
 @media (min-width: 992px) and (max-width: 1199px) {  
-    /*在992和1199像素之间的屏幕里,这里的样式才生效*/  
+    /*在992和1199像素之间的屏幕里,这里的样式才生效*/
+    #account {
+        display:none;
+    }
 }  
 
 @media (min-width: 1200px) {  

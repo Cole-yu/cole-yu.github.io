@@ -128,11 +128,56 @@ h3:hover {
         animation:hoverLine 3s;
     }
 
+.refresh-btn {    
+  position: fixed;   
+  left:8%;
+  top:20%;
+}
+
+ .refresh-btn > a {
+  display:flex;
+  position: absolute;
+  top: calc(50% - 60px);
+  left: calc(50% - 60px);
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 120px;  
+  text-decoration: none;
+  color: #333;
+  transition: all 1s ease;
+  box-shadow: 0 0 15px #222;
+  font-family: "segoe ui";
+  font-weight: 200;
+  font-size: 18px;
+ }
+    .refresh-btn > a:hover {
+        animation:hoverfont 800ms  ease 3;
+        -webkit-animation:hoverfont 800ms ease 3;
+    }
+
+ .refresh-btn .selected {          
+     background: rgba(51, 51, 51, 0.9);
+     display: flex;
+     top: calc(50% - 60px);
+     left: calc(50% - 60px);
+     color: #f1f1f1;
+     box-shadow: 0 0 10px #f1f1f1;
+}
+ .refresh-btn .selected:hover {
+        animation:hoverfont 1s 3;
+        -webkit-animation:hoverfont 1s 3;
+    }
+
 
 @media (max-width:991px) {                                  /*在小于768像素的屏幕里,这里的样式才生效*/  
-    #education-icon,#experience-icon{
+    #education-icon,#experience-icon,#refresh{
         display:none;
     }
+
 }
 
 @media (max-width:768px) {                                  /*在小于768像素的屏幕里,这里的样式才生效*/  

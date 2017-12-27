@@ -4,7 +4,19 @@
     var arr = document.getElementsByClassName("hoverScale");
         arr[0].addEventListener("click", gitclick, true);
         arr[1].addEventListener("click", sinaclick, true);
-        //console.log(arr);
+    //console.log(arr);
+
+        document.getElementById("refresh").addEventListener("click", function () {
+            document.getElementById("refresh").classList.add("selected");
+            var arr = document.getElementsByClassName("horizontal-line");           
+            arr[0].style.display = "block";                 //显示进度条
+            arr[0].classList.add("active");
+            setTimeout(function () {
+                window.location.reload();                           //刷新页面                
+            }, 3000);            
+            console.log("ok");
+        }, true);
+
 });
 
 

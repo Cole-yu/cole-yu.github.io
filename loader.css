@@ -187,6 +187,7 @@
 
 #loader-wrapper .load_title {
     font-family: 'Open Sans';
+    padding-top:10px;
     color: #FFF;
     font-size: 19px;
     width: 100%;

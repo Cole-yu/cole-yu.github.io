@@ -65,10 +65,8 @@ ul {
     background:#333333;
 }
 
-.icon-font {
-    /*border-radius:100%;*/
-    background-color:#0e0e0e;
-    line-height:25px;
+.icon-font {    
+    background-color:#0e0e0e;    
 }
 
 .padding-top-10 {
@@ -79,12 +77,6 @@ ul {
     border-left:5px solid #ff9f20;
     padding-left:10px;
 }    
-
-@media (max-width:580px){
-    .line-vertical {
-        display:none;
-    }
-}
 
 
 @media (max-width:991px) {                                  /*在小于768像素的屏幕里,这里的样式才生效*/  

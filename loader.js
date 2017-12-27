@@ -6,19 +6,47 @@
         arr[1].addEventListener("click", sinaclick, true);
     //console.log(arr);
 
+    //给设置图标一个active的类，使其一直保持转动
+        var setIcon = document.getElementsByClassName("set-icon")[0];
+        setIcon.classList.add("active");
+        console.log(setIcon.classList);
+        
+        setIcon.addEventListener("mouseover", setOnmouseOver, true);
+        setIcon.addEventListener("mouseout", setOnmouseOut, true);
+
+        //document.getElementById("refresh-btn").classList.add("active");
+
         document.getElementById("refresh").addEventListener("click", function () {
             document.getElementById("refresh").classList.add("selected");
             var arr = document.getElementsByClassName("horizontal-line");           
             arr[0].style.display = "block";                 //显示进度条
             arr[0].classList.add("active");
             setTimeout(function () {
-                window.location.reload();                           //刷新页面                
+                window.location.reload();
+                //Javascript刷新页面的几种方法：
+                //1    history.go(0) 
+                //2    location.reload() 
+                //3    location=location 
+                //4    location.assign(location) 
+                //5    document.execCommand('Refresh') 
+                //6    window.navigate(location) 
+                //7    location.replace(location) 
+                //8    document.URL=location.href
+
             }, 3000);            
             console.log("ok");
         }, true);
 
 });
 
+function setOnmouseOver() {
+    var el = document.getElementsByClassName("set-icon");
+    el[0].classList.remove("active");
+}
+function setOnmouseOut() {
+    var el = document.getElementsByClassName("set-icon");
+    el[0].classList.add("active");
+}
 
 function loading(time) {
     setTimeout(lazy, time);             //延迟加载

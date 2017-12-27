@@ -82,7 +82,6 @@ ul {
     padding-left:10px;
 }
 
-/*鼠标悬停图标时效果*/
 .hoverFont {    
     line-height: 2;
     vertical-align: middle;
@@ -93,17 +92,41 @@ ul {
 }
 .hoverFont:hover {
    animation:hoverfont 1s;
+   -webkit-animation:hoverfont 1s;
 }
 
-@keyframes hoverfont {
-    0%,100% {
-        transform:scale(1,1);
-    }
-    50% {
-        transform:scale(1.5,1.5);
-    }
+.hoverScale {    
+}
+.hoverScale:hover {
+   animation:hoverfont 1s;
+   -webkit-animation:hoverfont 1s;
 }
 
+h1:hover {
+    animation:rotate 200ms 5;
+    -webkit-animation:rotate 200ms 5;    
+}
+h3 {
+    text-align:center;
+}
+h3:hover {
+    animation:rotatey 2s 3;
+    -webkit-animation:rotatey 2s 3;
+}
+.horizontal-line {
+    position:fixed;
+    left:0;
+    top:1%;
+    border:none;
+    display:none;
+    width:0%;
+    height:5px;
+    background-color:#ff9f20;
+    z-index:999999;
+}
+    .horizontal-line.active {
+        animation:hoverLine 3s;
+    }
 
 
 @media (max-width:991px) {                                  /*在小于768像素的屏幕里,这里的样式才生效*/  
@@ -129,4 +152,104 @@ ul {
 
 @media (min-width: 1200px) {  
     /*在大于1200像素的屏幕里,这里的样式才生效*/  
-}  
+}
+
+.cursor {
+    cursor:pointer;
+}
+
+
+
+/*animation*/
+
+/*鼠标悬停图标时效果*/
+@keyframes hoverfont {
+    0%,100% {
+        transform:scale(1,1);
+    }
+    50% {
+        transform:scale(1.5,1.5);
+    }
+}
+
+
+
+/*鼠标抖动效果*/
+@keyframes rotate {
+   0%,100%{
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  25%{
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  50%{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  75%{
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+}
+
+/*绕y轴旋转3D旋转*/
+@keyframes  rotatey{    
+  0%{
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  25%{
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+  50%{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  75%{
+    -webkit-transform: rotateY(270deg);
+    -moz-transform: rotateY(270deg);
+    -ms-transform: rotateY(270deg);
+    -o-transform: rotateY(270deg);
+    transform: rotateY(270deg);
+  }
+  100%{
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes hoverLine {
+    0% {
+       width:0%;
+    }
+    100% {
+        width:100%;
+    }
+}

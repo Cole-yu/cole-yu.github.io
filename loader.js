@@ -6,7 +6,7 @@
         arr[1].addEventListener("click", sinaclick, true);
     //console.log(arr);
 
-    //给设置图标一个active的类，使其一直保持转动
+       //给设置图标一个active的类，使其一直保持转动
         var setIcon = document.getElementsByClassName("set-icon")[0];
         setIcon.classList.add("active");
         console.log(setIcon.classList);
@@ -14,7 +14,7 @@
         setIcon.addEventListener("mouseover", setOnmouseOver, true);
         setIcon.addEventListener("mouseout", setOnmouseOut, true);
 
-        //document.getElementById("refresh-btn").classList.add("active");
+        document.getElementById("refresh-btn").classList.add("active");
 
         document.getElementById("refresh").addEventListener("click", function () {
             document.getElementById("refresh").classList.add("selected");
@@ -42,10 +42,12 @@
 function setOnmouseOver() {
     var el = document.getElementsByClassName("set-icon");
     el[0].classList.remove("active");
+    document.getElementById("refresh-btn").classList.remove("active");
 }
 function setOnmouseOut() {
     var el = document.getElementsByClassName("set-icon");
     el[0].classList.add("active");
+    document.getElementById("refresh-btn").classList.add("active");
 }
 
 function loading(time) {

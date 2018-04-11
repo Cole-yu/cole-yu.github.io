@@ -412,3 +412,8 @@ h3:hover {
         top:80%;
     }
 }
+
+.alien-center{
+  display: flex;
+  align-items: center;
+}
